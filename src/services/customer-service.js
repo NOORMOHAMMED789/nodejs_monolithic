@@ -1,4 +1,4 @@
-const { CustomerRespository } = require("../database");
+const { CustomerRepository } = require("../database/index");
 const { FormateData, GeneratePassword, GenerateSalt, GenerateSignature, ValidatePassword } = require("../utils");
 const { APIError, BadRequestError } = require('../utils/app-errors');
 
@@ -7,7 +7,7 @@ const { APIError, BadRequestError } = require('../utils/app-errors');
 class CustomerService {
     
     constructor() {
-        this.repository = new CustomerRespository();
+        this.repository = new CustomerRepository();
     }
 
     async SignIn(userInputs) {
@@ -52,3 +52,5 @@ class CustomerService {
         }
     }
 }
+
+module.exports = CustomerService
