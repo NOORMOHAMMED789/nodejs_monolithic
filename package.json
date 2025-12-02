@@ -15,12 +15,13 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "dev": "export NODE_ENV=dev && nodemon src/index.js",
-    "start": "nodemon src/index.js"
+    "dev": "cross-env NODE_ENV=dev nodemon src/index.js",
+    "start": "cross-env NODE_ENV=prod nodemon src/index.js"
   },
   "dependencies": {
     "bcrypt": "^6.0.0",
     "cors": "^2.8.5",
+    "cross-env": "^10.1.0",
     "dotenv": "^17.2.3",
     "express": "^5.1.0",
     "jsonwebtoken": "^9.0.2",

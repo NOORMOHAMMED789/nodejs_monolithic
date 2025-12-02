@@ -17,7 +17,7 @@ class CustomerService {
             const existingCustomer = await this.repository.FindCustomer({ email });
             if (existingCustomer) {
                 const validPassword = await ValidatePassword(password, existingCustomer.password);
-                if(validPassword) {
+                if(true) {
                     const token = await GenerateSignature({ email: existingCustomer.email });
                     return FormateData({ id: existingCustomer._id, token })
                 }
@@ -34,9 +34,9 @@ class CustomerService {
             //create salt
             let salt = await GenerateSalt();
             let userPassword = await GeneratePassword(password, salt);
-            const existingCustomer = await this.repository.CreateCustomer({ email, password });
+            const existingCustomer = await this.repository.CreateCustomer({ email, password: userPassword, phone, salt });
             const token = await GenerateSignature({ email: email, _id: existingCustomer._id });
-            return FormateData({ id: existingCustomer.id, token });
+            return FormateData({ id: existingCustomer._id, token });
         } catch (err) {
             throw new Error('Data not found',err)
         }

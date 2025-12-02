@@ -1,1 +1,12 @@
 {"level":"error","message":"Mon Dec 01 2025 23:24:32 GMT+0530 (India Standard Time)-{}","private":true}
+{"level":"error","message":"Tue Dec 02 2025 15:30:01 GMT+0530 (India Standard Time)-{\"name\":\"NOT FOUND\",\"statusCode\":400,\"isOperational\":true,\"errorStack\":false,\"logError\":{}}","private":true}
+{"level":"error","message":"Tue Dec 02 2025 15:39:23 GMT+0530 (India Standard Time)-{\"name\":\"NOT FOUND\",\"statusCode\":400,\"isOperational\":true,\"errorStack\":false,\"logError\":{}}","private":true}
+{"level":"error","message":"Tue Dec 02 2025 15:57:14 GMT+0530 (India Standard Time)-{\"name\":\"NOT FOUND\",\"statusCode\":400,\"isOperational\":true,\"errorStack\":false,\"logError\":{}}","private":true}
+{"level":"error","message":"Tue Dec 02 2025 15:58:06 GMT+0530 (India Standard Time)-{}","private":true}
+{"level":"error","message":"Tue Dec 02 2025 15:58:59 GMT+0530 (India Standard Time)-{\"expose\":true,\"statusCode\":400,\"status\":400,\"body\":\"{\\n    \\\"email\\\":\\\"noor@gmail.com\\\",\\n    \\\"password\\\":\\\"123456\\\",\\n}\",\"type\":\"entity.parse.failed\"}","private":true}
+{"level":"error","message":"Tue Dec 02 2025 15:59:04 GMT+0530 (India Standard Time)-{\"name\":\"NOT FOUND\",\"statusCode\":400,\"isOperational\":true,\"errorStack\":false,\"logError\":{}}","private":true}
+{"level":"error","message":"Tue Dec 02 2025 16:01:22 GMT+0530 (India Standard Time)-{\"name\":\"NOT FOUND\",\"statusCode\":400,\"isOperational\":true,\"errorStack\":false,\"logError\":{}}","private":true}
+{"level":"error","message":"Tue Dec 02 2025 16:22:20 GMT+0530 (India Standard Time)-{\"name\":\"NOT FOUND\",\"statusCode\":400,\"isOperational\":true,\"errorStack\":false,\"logError\":{}}","private":true}
+{"level":"error","message":"Tue Dec 02 2025 16:23:40 GMT+0530 (India Standard Time)-{\"name\":\"NOT FOUND\",\"statusCode\":400,\"isOperational\":true,\"errorStack\":false,\"logError\":{}}","private":true}
+{"level":"error","message":"Tue Dec 02 2025 16:24:19 GMT+0530 (India Standard Time)-{\"name\":\"NOT FOUND\",\"statusCode\":400,\"isOperational\":true,\"errorStack\":false,\"logError\":{}}","private":true}
+{"level":"error","message":"Tue Dec 02 2025 16:26:41 GMT+0530 (India Standard Time)-{\"name\":\"NOT FOUND\",\"statusCode\":400,\"isOperational\":true,\"errorStack\":false,\"logError\":{}}","private":true}

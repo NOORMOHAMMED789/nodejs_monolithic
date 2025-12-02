@@ -1,9 +1,5 @@
 const { CustomerModel, AddressModel } = require("../models");
-const {
-  APIError,
-  BadRequestError,
-  STATUS_CODES,
-} = require("../../utils/app-errors");
+const {STATUS_CODES, APIError} = require("../../utils/app-errors");
 
 //Dealing with data base operations
 class CustomerRepository {

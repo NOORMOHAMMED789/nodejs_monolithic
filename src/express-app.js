@@ -15,5 +15,5 @@ module.exports = async(app) => {
     customer(app)
 
     //error handling
-    // app.use(HandleErrors)
+    app.use(HandleErrors)
 }

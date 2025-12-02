@@ -2,7 +2,6 @@ const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 
 const { APP_SECRET } = require('../config');
-const secret = APP_SECRET || 'noor_mohammed_online_shopping'
 
 //Utility functions
 module.exports.GenerateSalt = async () => {
@@ -34,15 +33,20 @@ module.exports.GenerateSignature = async (payload) => {
 module.exports.ValidateSignature = async (req) => {
     try {
         const signature = req.get('Authorization');
-        console.log(signature);
-        const payload = await jwt.verify(signature.split(" ")[1], APP_SECRET);
+        if (!signature) return false;
+        console.log("====signature====",signature)
+        const token = signature.split(" ")[1];
+        const payload = jwt.verify(token, APP_SECRET);  // USE CORRECT SECRET
         req.user = payload;
         return true;
+
     } catch (error) {
-        console.log(error);
+        console.log("signature error", error);
         return false;
     }
-}
+};
+
+
 
 module.exports.FormateData = (data) => {
     if(data) {
